@@ -104,7 +104,9 @@ modal.querySelector('.modal-close').addEventListener('click',()=>modal.close());
 const menu=document.querySelector('.menu-button'), mobile=document.querySelector('#mobile-nav');
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));mobile.hidden=open});
 mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobile.hidden=true;menu.setAttribute('aria-expanded','false')}));
-window.addEventListener('scroll',()=>document.querySelector('.site-header').classList.toggle('scrolled',scrollY>10));
+window.addEventListener('resize',()=>{if(window.matchMedia('(min-width:1051px)').matches){mobile.hidden=true;menu.setAttribute('aria-expanded','false')}});
+const siteHeader=document.querySelector('.site-header');
+window.addEventListener('scroll',()=>siteHeader.classList.toggle('scrolled',scrollY>10),{passive:true});
 
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.09});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
