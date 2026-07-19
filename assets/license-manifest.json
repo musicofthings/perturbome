@@ -1,0 +1,46 @@
+{
+  "project": "Perturbome Atlas",
+  "generated": "2026-07-19",
+  "figures": [
+    {
+      "file": "figures/sc-crispr-fig1.png",
+      "source": "Kim HS et al. Single-cell characterization of CRISPR-modified transcript isoforms with nanopore sequencing. Genome Biology 22, 331 (2021).",
+      "doi": "10.1186/s13059-021-02554-1",
+      "figure": "Figure 1",
+      "license": "CC BY 4.0",
+      "changes": "Cropped to the figure area; no scientific content altered."
+    },
+    {
+      "file": "figures/sc-crispr-fig2.png",
+      "source": "Kim HS et al. Single-cell characterization of CRISPR-modified transcript isoforms with nanopore sequencing. Genome Biology 22, 331 (2021).",
+      "doi": "10.1186/s13059-021-02554-1",
+      "figure": "Figure 2",
+      "license": "CC BY 4.0",
+      "changes": "Cropped to the figure area; no scientific content altered."
+    },
+    {
+      "file": "figures/drugseq-workflow.png",
+      "source": "Ye C et al. DRUG-seq for miniaturized high-throughput transcriptome profiling in drug discovery. Nature Communications 9, 4307 (2018).",
+      "doi": "10.1038/s41467-018-06500-x",
+      "figure": "Figure 1",
+      "license": "CC BY 4.0",
+      "changes": "Cropped to the figure area; no scientific content altered."
+    },
+    {
+      "file": "figures/drugseq-mechanism.png",
+      "source": "Ye C et al. DRUG-seq for miniaturized high-throughput transcriptome profiling in drug discovery. Nature Communications 9, 4307 (2018).",
+      "doi": "10.1038/s41467-018-06500-x",
+      "figure": "Figure 3 excerpt",
+      "license": "CC BY 4.0",
+      "changes": "Cropped excerpt showing panels a-e; no scientific content altered."
+    },
+    {
+      "file": "figures/m6a-isosc-workflow.png",
+      "source": "Ren Z et al. Isoform characterization of m6A in single cells identifies its role in RNA surveillance. Nature Communications (2025).",
+      "doi": "10.1038/s41467-025-60869-0",
+      "figure": "Figure 2",
+      "license": "CC BY-NC-ND 4.0",
+      "conditions": "Non-commercial reuse only; no derivatives. Included as an unmodified crop for educational presentation. Review the licence before public or commercial deployment."
+    }
+  ]
+}

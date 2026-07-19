@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An evidence-led educational atlas of perturbation biology, with Nanopore long-read perturbomics at the center." />
+  <meta name="theme-color" content="#071a1d" />
+  <title>Perturbome Atlas — Read the full cellular response</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Perturbome Atlas home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img"><path d="M9 24c0-8 6.5-14.5 14.5-14.5S38 16 38 24 31.5 38.5 23.5 38.5 9 32 9 24Z"/><path d="M4 24h40M24 4v40"/><circle cx="24" cy="24" r="5"/></svg>
+      </span>
+      <span><strong>Perturbome</strong><small>Atlas</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#nanopore">Nanopore first</a>
+      <a href="#approaches">Approaches</a>
+      <a href="#figures">Publication figures</a>
+      <a href="#datasets">Open datasets</a>
+      <a href="#designer">Experiment designer</a>
+    </nav>
+    <button class="menu-button" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+    <a href="#nanopore">Nanopore first</a><a href="#approaches">Approaches</a><a href="#figures">Publication figures</a><a href="#datasets">Open datasets</a><a href="#designer">Experiment designer</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> An educational atlas of perturbation biology</div>
+          <h1>Perturb cells.<br /><em>Read complete molecules.</em></h1>
+          <p class="hero-lede">Gene-level counts tell you that a cell changed. Nanopore long reads can show <strong>which full-length isoform changed, whether the edit occurred, and—using direct RNA—what happened to the native molecule.</strong></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#nanopore">Explore Nanopore perturbomics <span>→</span></a>
+            <a class="button secondary" href="#datasets">Browse public data</a>
+          </div>
+          <div class="hero-proof" aria-label="Core capabilities">
+            <div><strong>Full-length</strong><span>isoforms</span></div>
+            <div><strong>Direct</strong><span>edit validation</span></div>
+            <div><strong>Native RNA</strong><span>signal</span></div>
+            <div><strong>Single cell</strong><span>compatible</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1" aria-label="Illustration comparing short-read fragments with a full-length Nanopore molecule">
+          <div class="visual-label top">Perturbation</div>
+          <div class="cell-orbit">
+            <span class="orbital o1"></span><span class="orbital o2"></span><span class="orbital o3"></span>
+            <div class="cell-core"><span>CRISPR</span><span>drug</span><span>stress</span></div>
+          </div>
+          <div class="response-arrow"><span></span></div>
+          <div class="molecule-panel">
+            <div class="panel-kicker">Response readout</div>
+            <div class="short-read-row"><span></span><span></span><span></span><span></span><i>fragments</i></div>
+            <div class="long-read-row"><span class="cap">5′</span><b></b><b></b><b></b><b></b><span class="tail">poly(A)</span></div>
+            <div class="molecule-tags"><span>isoform</span><span>edit</span><span>m6A</span><span>poly(A)</span></div>
+          </div>
+          <p class="visual-caption"><b>The central argument:</b> retain molecule-level information instead of reconstructing it from fragments.</p>
+        </div>
+      </div>
+      <div class="hero-marquee" aria-hidden="true"><span>LONG READS</span><i>•</i><span>PERTURBATION</span><i>•</i><span>ISOFORM RESOLUTION</span><i>•</i><span>NATIVE RNA</span><i>•</i><span>OPEN DATA</span></div>
+    </section>
+
+    <section class="positioning section-pad compact" aria-label="Scientific positioning">
+      <div class="position-card reveal">
+        <div class="position-icon">≠</div>
+        <div>
+          <h2>“Best” depends on the biological question.</h2>
+          <p>This atlas makes a strong but bounded case: <strong>Nanopore is the most information-rich choice when perturbations may alter isoforms, transcript structure, editing outcomes, RNA modifications or poly(A) tails.</strong> For very large, gene-level screens, DRUG-seq, Perturb-seq and imaging can offer higher throughput or lower cost. The most powerful programmes combine them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="nanopore section-pad" id="nanopore">
+      <div class="section-heading reveal">
+        <div><span class="section-index">01</span><span class="eyebrow">Nanopore perturbomics</span></div>
+        <h2>When the response lives in the <em>isoform</em>, long reads change the experiment.</h2>
+        <p>Short reads efficiently quantify genes. Nanopore preserves the molecular context needed to connect a perturbation to transcript structure and, in direct RNA experiments, native-RNA features.</p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="cap-card reveal"><span class="cap-num">01</span><div class="cap-icon transcript"><i></i><i></i><i></i></div><h3>Full-length isoforms</h3><p>Observe exon connectivity across a molecule rather than infer isoforms from fragmented reads.</p></article>
+        <article class="cap-card reveal delay-1"><span class="cap-num">02</span><div class="cap-icon target"><i></i></div><h3>Edit confirmation</h3><p>Link guide identity with the actual indel or splice consequence in the same transcriptomic workflow.</p></article>
+        <article class="cap-card reveal delay-2"><span class="cap-num">03</span><div class="cap-icon native"><i></i><i></i></div><h3>Native RNA signal</h3><p>Direct RNA sequencing can retain signal associated with modifications and poly(A)-tail properties.</p></article>
+        <article class="cap-card reveal"><span class="cap-num">04</span><div class="cap-icon barcode"><i></i><i></i><i></i></div><h3>Single-cell compatible</h3><p>Sequence barcoded 10x cDNA with long reads, while short reads provide efficient cell and guide assignment.</p></article>
+        <article class="cap-card reveal delay-1"><span class="cap-num">05</span><div class="cap-icon hidden"><i></i><i></i></div><h3>Hidden consequences</h3><p>Detect splice switching, intron retention and alternative polyadenylation even when gene-level expression barely changes.</p></article>
+        <article class="cap-card reveal delay-2"><span class="cap-num">06</span><div class="cap-icon hybrid"><i></i><i></i></div><h3>Hybrid by design</h3><p>Pair Nanopore depth where structure matters with Illumina scale, imaging or proteomics for broader phenotype coverage.</p></article>
+      </div>
+
+      <div class="spotlight-head reveal"><span>Project spotlights</span><p>Real-world studies that move perturbation readouts beyond gene counts.</p></div>
+      <div class="spotlight-grid">
+        <article class="project-card featured reveal">
+          <div class="project-meta"><span class="badge nanopore">Nanopore</span><span>Genome Biology · 2021</span></div>
+          <h3>Single-cell CRISPR isoform sequencing</h3>
+          <p>Stanford researchers combined short-read guide/gene-expression profiling with Nanopore cDNA sequencing to observe CRISPR-induced mutations and full-length isoforms at single-cell resolution.</p>
+          <ul><li>Directly detects targeted edits</li><li>Resolves exon-skipping consequences</li><li>Public raw data and MIT-licensed code</li></ul>
+          <div class="project-links"><a href="https://doi.org/10.1186/s13059-021-02554-1" target="_blank" rel="noreferrer">Publication ↗</a><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA708300" target="_blank" rel="noreferrer">PRJNA708300 ↗</a></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="project-meta"><span class="badge nanopore">Nanopore + Illumina</span><span>bioRxiv · 2025</span></div>
+          <h3>CRISPore-seq</h3>
+          <p>A multimodal CRISPR perturbation framework designed to capture guide identity, gene expression, full-length transcript isoforms and surface proteins.</p>
+          <ul><li>15 RNA-binding-protein knockdowns</li><li>Alternative-splicing regulator map</li><li>Designed for scalable pooled screens</li></ul>
+          <div class="project-links"><a href="https://doi.org/10.1101/2025.11.25.690515" target="_blank" rel="noreferrer">Preprint ↗</a></div>
+        </article>
+        <article class="project-card reveal delay-2">
+          <div class="project-meta"><span class="badge native">Direct RNA</span><span>Nature Communications · 2025</span></div>
+          <h3>m6A-isoSC-seq and RNA surveillance</h3>
+          <p>Long- and short-read single-cell sequencing were integrated with m6A mapping, while SMG1 inhibition and UPF1 depletion supplied mechanistic perturbations of RNA surveillance.</p>
+          <ul><li>Isoform-level m6A context</li><li>SMG1 inhibitor direct-RNA arm</li><li>UPF1 knockdown dataset</li></ul>
+          <div class="project-links"><a href="https://doi.org/10.1038/s41467-025-60869-0" target="_blank" rel="noreferrer">Publication ↗</a><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239765" target="_blank" rel="noreferrer">GSE239765 ↗</a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-meta"><span class="badge nanopore">Nanopore benchmark</span><span>bioRxiv · 2026</span></div>
+          <h3>Isoform-level single-cell CRISPR screens</h3>
+          <p>A cross-platform K562 CRISPRi benchmark using ONT, PacBio and Illumina demonstrated that splicing consequences can remain hidden at gene level.</p>
+          <ul><li>DDX6, GEMIN5 and GFI1B perturbations</li><li>Matched guide assignments</li><li>Raw and processed data public</li></ul>
+          <div class="project-links"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE330222" target="_blank" rel="noreferrer">GSE330222 ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="approaches section-pad" id="approaches">
+      <div class="section-heading reveal">
+        <div><span class="section-index">02</span><span class="eyebrow">The perturbation landscape</span></div>
+        <h2>Every approach samples a different layer of cellular response.</h2>
+        <p>Use the tabs to move from molecule-resolved sequencing through transcriptome-scale screens, morphology and predictive virtual-cell models.</p>
+      </div>
+      <div class="approach-tabs reveal" role="tablist" aria-label="Perturbation approaches">
+        <button role="tab" aria-selected="true" data-tab="longread">Long-read</button>
+        <button role="tab" aria-selected="false" data-tab="singlecell">Single-cell CRISPR</button>
+        <button role="tab" aria-selected="false" data-tab="chemical">Chemical transcriptomics</button>
+        <button role="tab" aria-selected="false" data-tab="imaging">Morphology</button>
+        <button role="tab" aria-selected="false" data-tab="spatial">Spatial & optical</button>
+        <button role="tab" aria-selected="false" data-tab="virtual">Virtual cells</button>
+      </div>
+      <div class="approach-panel reveal" id="approach-panel"></div>
+
+      <div class="comparison-wrap reveal">
+        <div class="comparison-intro"><span class="eyebrow">Capability matrix</span><h3>No platform wins every axis.</h3><p>Relative strengths are shown for typical implementations. Experimental design, chemistry and sequencing depth can materially change performance.</p></div>
+        <div class="table-scroll">
+          <table class="comparison-table">
+            <thead><tr><th>Approach</th><th>Full isoforms</th><th>Single cell</th><th>Native RNA</th><th>Edit confirmation</th><th>Screen scale</th><th>Phenotype breadth</th></tr></thead>
+            <tbody>
+              <tr class="highlight"><th>Nanopore long-read</th><td><span class="score high">High</span></td><td><span class="score high">High</span></td><td><span class="score high">High</span></td><td><span class="score high">High</span></td><td><span class="score mid">Medium</span></td><td><span class="score mid">Medium</span></td></tr>
+              <tr><th>Perturb-seq / CROP-seq</th><td><span class="score low">Low</span></td><td><span class="score high">High</span></td><td><span class="score none">No</span></td><td><span class="score low">Indirect</span></td><td><span class="score high">High</span></td><td><span class="score mid">Medium</span></td></tr>
+              <tr><th>DRUG-seq</th><td><span class="score low">Low</span></td><td><span class="score none">No</span></td><td><span class="score none">No</span></td><td><span class="score none">N/A</span></td><td><span class="score high">Very high</span></td><td><span class="score mid">Medium</span></td></tr>
+              <tr><th>Cell Painting</th><td><span class="score none">No</span></td><td><span class="score high">High</span></td><td><span class="score none">No</span></td><td><span class="score none">No</span></td><td><span class="score high">Very high</span></td><td><span class="score high">High</span></td></tr>
+              <tr><th>Spatial perturbation</th><td><span class="score low">Usually low</span></td><td><span class="score high">High</span></td><td><span class="score none">No</span></td><td><span class="score mid">Variable</span></td><td><span class="score mid">Medium</span></td><td><span class="score high">High</span></td></tr>
+              <tr><th>Proteomic screens</th><td><span class="score none">N/A</span></td><td><span class="score mid">Variable</span></td><td><span class="score none">N/A</span></td><td><span class="score none">No</span></td><td><span class="score mid">Medium</span></td><td><span class="score high">High</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="figures section-pad" id="figures">
+      <div class="section-heading reveal">
+        <div><span class="section-index">03</span><span class="eyebrow">Evidence gallery</span></div>
+        <h2>Original open-access publication figures, placed in experimental context.</h2>
+        <p>Figures are reproduced from open-access papers with attribution. To respect quotation limits, each card provides a short original-caption excerpt, an educational paraphrase and a link to the complete publication legend.</p>
+      </div>
+      <div class="license-note reveal"><span>ⓘ</span><p><strong>Reuse note:</strong> CC BY figures may be reused with attribution. The m6A-isoSC-seq figure is CC BY-NC-ND and is included unmodified for non-commercial education; review the licence before deployment in a commercial context.</p></div>
+      <div class="figure-gallery">
+        <article class="figure-card reveal">
+          <button class="figure-image" data-image="assets/figures/sc-crispr-fig1.png" aria-label="Enlarge single-cell CRISPR long-read integration figure"><img src="assets/figures/sc-crispr-fig1.png" alt="Workflow integrating single-cell short-read expression with Nanopore full-length isoform sequencing and RACK1 isoform heatmaps" loading="lazy" /></button>
+          <div class="figure-copy"><div class="figure-source"><span>Figure 1</span><span>CC BY 4.0</span></div><h3>One cell, two complementary readouts</h3><blockquote>“Overview of single-cell short/long-read integration strategy…”</blockquote><p>The workflow separates efficient gene-expression measurement from molecule-resolved isoform identification. The RACK1 example shows how cells can cluster by transcript structure rather than only expression abundance.</p><a href="https://doi.org/10.1186/s13059-021-02554-1" target="_blank" rel="noreferrer">Kim et al., Genome Biology (2021) ↗</a></div>
+        </article>
+        <article class="figure-card reverse reveal">
+          <button class="figure-image" data-image="assets/figures/sc-crispr-fig2.png" aria-label="Enlarge CRISPR mutation confirmation figure"><img src="assets/figures/sc-crispr-fig2.png" alt="Single-cell CRISPR workflow showing guide capture, gene expression, long-read mutation and isoform analysis" loading="lazy" /></button>
+          <div class="figure-copy"><div class="figure-source"><span>Figure 2</span><span>CC BY 4.0</span></div><h3>Verify the perturbation—not just the guide</h3><blockquote>“Overview of single-cell CRISPR screen integrated with long-read sequencing.”</blockquote><p>Guide detection indicates intended perturbation; long reads can directly reveal whether the target transcript carries the expected mutation and how that edit changes isoform structure.</p><a href="https://doi.org/10.1186/s13059-021-02554-1" target="_blank" rel="noreferrer">View full figure legend ↗</a></div>
+        </article>
+        <article class="figure-card reveal">
+          <button class="figure-image" data-image="assets/figures/drugseq-workflow.png" aria-label="Enlarge DRUG-seq workflow figure"><img src="assets/figures/drugseq-workflow.png" alt="DRUG-seq plate-based workflow with well barcodes, UMIs, pooling, amplification and sequencing" loading="lazy" /></button>
+          <div class="figure-copy"><div class="figure-source"><span>Figure 1</span><span>CC BY 4.0</span></div><h3>How high-throughput chemical perturbation scales</h3><blockquote>“DRUG-seq overview.”</blockquote><p>Well-specific barcodes and UMIs are introduced before pooling, enabling hundreds or thousands of compound conditions to share library preparation and sequencing. This is an excellent gene-level discovery layer to pair with selective long-read follow-up.</p><a href="https://doi.org/10.1038/s41467-018-06500-x" target="_blank" rel="noreferrer">Ye et al., Nature Communications (2018) ↗</a></div>
+        </article>
+        <article class="figure-card reverse reveal">
+          <button class="figure-image" data-image="assets/figures/drugseq-mechanism.png" aria-label="Enlarge DRUG-seq mechanism-of-action figure excerpt"><img src="assets/figures/drugseq-mechanism.png" alt="DRUG-seq clustering and dose-response profiles illustrating mechanism-of-action inference" loading="lazy" /></button>
+          <div class="figure-copy"><div class="figure-source"><span>Figure 3 excerpt</span><span>CC BY 4.0</span></div><h3>Dose-resolved signatures reveal mechanism</h3><blockquote>“DRUG-seq profiling of compounds produces mechanistic insights.”</blockquote><p>Transcriptomic clustering groups compounds by broad biological programme, while dose-response trajectories expose potency, pathway saturation and convergent chemical effects.</p><a href="https://doi.org/10.1038/s41467-018-06500-x" target="_blank" rel="noreferrer">View complete figure ↗</a></div>
+        </article>
+        <article class="figure-card reveal noncommercial">
+          <button class="figure-image" data-image="assets/figures/m6a-isosc-workflow.png" aria-label="Enlarge m6A isoSC sequencing figure"><img src="assets/figures/m6a-isosc-workflow.png" alt="m6A isoSC-seq workflow combining 10x single-cell cDNA, Nanopore and Illumina sequencing" loading="lazy" /></button>
+          <div class="figure-copy"><div class="figure-source"><span>Figure 2</span><span>CC BY-NC-ND 4.0</span></div><h3>From transcript identity to modification state</h3><blockquote>“Single-cell level characterization of m6A.”</blockquote><p>The same barcoded single-cell cDNA is split across ONT and Illumina readouts, enabling cell-state mapping alongside long-read molecular context. Separate direct-RNA perturbations interrogate SMG1/UPF1-mediated RNA surveillance.</p><a href="https://doi.org/10.1038/s41467-025-60869-0" target="_blank" rel="noreferrer">Ren et al., Nature Communications (2025) ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="datasets section-pad" id="datasets">
+      <div class="section-heading reveal">
+        <div><span class="section-index">04</span><span class="eyebrow">Public data catalogue</span></div>
+        <h2>Start with datasets you can actually download.</h2>
+        <p>Filter by perturbation, platform and data layer. “Native signal unclear” means the archive exposes sequence data but the availability of FAST5/POD5 needs run-level verification.</p>
+      </div>
+      <div class="dataset-controls reveal">
+        <label class="search-box"><span>⌕</span><input id="dataset-search" type="search" placeholder="Search studies, genes, drugs or accessions" /></label>
+        <div class="filter-buttons" aria-label="Dataset platform filters">
+          <button class="active" data-filter="all">All</button><button data-filter="nanopore">Nanopore</button><button data-filter="direct-rna">Direct RNA</button><button data-filter="short-read">Short-read</button><button data-filter="imaging">Imaging</button><button data-filter="virtual-cell">Virtual cell</button>
+        </div>
+      </div>
+      <div class="dataset-summary reveal"><span id="dataset-count">0 datasets</span><span>Updated July 2026</span></div>
+      <div class="dataset-list" id="dataset-list" aria-live="polite"></div>
+    </section>
+
+    <section class="designer section-pad" id="designer">
+      <div class="designer-shell reveal">
+        <div class="designer-copy">
+          <span class="section-index">05</span><span class="eyebrow">Experiment designer</span>
+          <h2>Choose the readout before choosing the platform.</h2>
+          <p>Select the biological information you cannot afford to lose. The recommendation updates as you answer.</p>
+          <div class="question-stack" id="question-stack">
+            <label><input type="checkbox" value="isoform" /><span><b>Isoform or splice switching</b><small>Exon connectivity, retained introns, alternative starts/ends</small></span></label>
+            <label><input type="checkbox" value="native" /><span><b>Native RNA features</b><small>Modification-aware signal or poly(A)-tail information</small></span></label>
+            <label><input type="checkbox" value="singlecell" /><span><b>Cell-state heterogeneity</b><small>Resolve rare or divergent responders</small></span></label>
+            <label><input type="checkbox" value="scale" /><span><b>Very large perturbation library</b><small>Thousands of compounds or guides at low per-condition cost</small></span></label>
+            <label><input type="checkbox" value="morphology" /><span><b>Organelle or morphological phenotype</b><small>Shape, texture, localization and cellular architecture</small></span></label>
+            <label><input type="checkbox" value="spatial" /><span><b>Tissue or neighbourhood context</b><small>Preserve where the perturbed cell sits</small></span></label>
+          </div>
+        </div>
+        <aside class="recommendation" id="recommendation">
+          <div class="rec-kicker">Recommended starting architecture</div>
+          <div class="rec-icon"><span></span><span></span><span></span></div>
+          <h3>Hybrid perturbation programme</h3>
+          <p>Use a scalable discovery assay first, then deploy Nanopore on the conditions where complete-molecule information will change interpretation.</p>
+          <div class="rec-stack"><span>Discovery</span><i>→</i><span>Nanopore resolution</span><i>→</i><span>Orthogonal validation</span></div>
+          <ul id="rec-reasons"><li>Balanced scale and biological depth</li><li>Reduces long-read sequencing burden</li><li>Supports causal follow-up</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="blueprint section-pad">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">A proposed flagship study</span></div>
+        <h2>Nanopore DrugSeq: a dose-resolved, isoform-aware pharmacotranscriptome.</h2>
+        <p>A practical programme can combine arrayed chemical perturbation with selective long-read and direct-RNA profiling rather than forcing one assay to do everything.</p>
+      </div>
+      <div class="blueprint-flow reveal">
+        <div class="flow-node"><span>1</span><b>Discovery screen</b><small>384-well DRUG-seq or Cell Painting<br/>1,000–10,000 compounds</small></div><i>→</i>
+        <div class="flow-node accent"><span>2</span><b>Long-read deep dive</b><small>ONT cDNA on selected dose curves<br/>full-length isoform response</small></div><i>→</i>
+        <div class="flow-node accent"><span>3</span><b>Native-RNA subset</b><small>Direct RNA for modification and poly(A)<br/>mechanistically chosen hits</small></div><i>→</i>
+        <div class="flow-node"><span>4</span><b>Functional validation</b><small>Viability, imaging, proteomics<br/>target engagement</small></div><i>→</i>
+        <div class="flow-node"><span>5</span><b>Predictive model</b><small>Chemical structure × dose × cell state<br/>gene and isoform outputs</small></div>
+      </div>
+      <div class="blueprint-principles reveal">
+        <div><strong>Design for generalization</strong><span>Hold out chemical scaffolds, targets, cell types and dose ranges.</span></div>
+        <div><strong>Measure toxicity explicitly</strong><span>Separate mechanism-specific signatures from generic stress and cell death.</span></div>
+        <div><strong>Publish molecular provenance</strong><span>Release barcodes, count matrices, isoform annotations, BAM/FASTQ and native signal where feasible.</span></div>
+      </div>
+    </section>
+
+    <section class="sources section-pad compact">
+      <div class="sources-card reveal"><div><span class="eyebrow">Source discipline</span><h2>Built to be checked, reused and extended.</h2></div><p>Every study card links to a DOI, official project page, GEO/SRA accession or code repository. Figure licences are recorded in <code>assets/license-manifest.json</code>. Accession metadata can change; verify run-level files before committing compute or storage.</p><a class="button secondary" href="assets/license-manifest.json">View licence manifest</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark small" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 24c0-8 6.5-14.5 14.5-14.5S38 16 38 24 31.5 38.5 23.5 38.5 9 32 9 24Z"/><path d="M4 24h40M24 4v40"/><circle cx="24" cy="24" r="5"/></svg></span><div><strong>Perturbome Atlas</strong><span>Educational resource · July 2026</span></div></div>
+    <p>Scientific framing: Nanopore-first where complete molecules matter; multimodal by default where scale and phenotype breadth matter.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog class="image-modal" id="image-modal"><button class="modal-close" aria-label="Close image">×</button><img alt="Enlarged publication figure" /></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
